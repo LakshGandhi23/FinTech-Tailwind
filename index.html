@@ -47,7 +47,7 @@
   <body>
     <!-- Navigation -->
     <nav
-      class="navigation fixed top-0 w-full bg-transparent py-4 transition-all duration-100 ease-in-out"
+      class="navigation fixed top-0 w-full bg-transparent py-4 transition-all duration-100 ease-in-out z-50"
     >
       <div class="container mx-auto py-2 flex items-center justify-between">
         <a href="#">
@@ -263,24 +263,24 @@
       <section class="hero">
         <div class="container text-center">
           <!-- Hero Text -->
-          <div class="row justify-content-center mb-5">
-            <div class="col-lg-9">
+          <div class="flex justify-center mb-12">
+            <div class="w-full lg:w-3/4 px-4">
               <div
-                class="hero-section-text vstack gap-3 wow animate__animated animate__fadeInUp"
+                class="hero-section-text flex flex-col gap-8 wow animate__animated animate__fadeInUp"
               >
-                <h2 class="display-3 fw-bold">
+                <h2 class="text-4xl sm:text-5xl md:text-6xl font-bold">
                   Ultimate Analytics To Boost Your Business
                 </h2>
-                <p class="lead">
+                <p class="text-xl text-gray-700">
                   Discover advanced analytics and actionable insights to
                   efficiently drive your business growth forward with greater
                   ease and confidence
                 </p>
                 <div
-                  class="hero-section-buttons d-flex align-items-center justify-content-center gap-3"
+                  class="hero-section-buttons flex items-center justify-center gap-3"
                 >
-                  <a href="#" class="btn btn-lg btn-primary">Get Started Now</a>
-                  <a href="#" class="btn btn-lg btn-outline-secondary border-2"
+                  <a href="#" class="btn btn-primary btn-lg">Get Started Now</a>
+                  <a href="#" class="btn btn-outline-secondary btn-lg border-2"
                     >Find Out More</a
                   >
                 </div>
@@ -289,15 +289,15 @@
           </div>
 
           <!-- Hero Image -->
-          <div class="row">
-            <div class="col-12">
+          <div class="flex justify-center">
+            <div class="w-full">
               <div
                 class="hero-section-img wow animate__animated animate__fadeInUp"
               >
                 <img
                   src="images/hero-img.jpg"
                   alt="hero image"
-                  class="img-fluid shadow rounded-5"
+                  class="img-fluid shadow rounded-2xl"
                 />
               </div>
             </div>
@@ -309,47 +309,59 @@
     <!-- Statistics Section -->
     <section class="statistics py-100">
       <div class="container">
-        <div class="row justify-content-md-center row-cols-1 row-cols-md-3 g-4">
+        <div class="flex flex-col md:flex-row justify-center gap-4">
           <!-- Stat 1 -->
-          <div class="col">
+          <div class="w-full md:w-1/3">
             <div
-              class="statistics-section-text d-flex flex-column flex-lg-row gap-2 text-center align-items-lg-center wow animate__animated animate__fadeInUp"
+              class="statistics-section-text flex flex-col lg:flex-row gap-2 text-center lg:items-center wow animate__animated animate__fadeInUp"
               data-wow-offset="100"
             >
-              <h2 class="display-3 fw-bold flex-lg-shrink-0">
+              <h2
+                class="text-5xl sm:text-6xl md:text-7xl font-bold flex-shrink-0"
+              >
                 <span class="odometer" id="stat1" data-odometer-final="9.1"
                   >0</span
                 ><small>K</small>
               </h2>
-              <p class="lead fs-5">Clients engaged worldwide with us</p>
+              <p class="text-lg text-gray-700">
+                Clients engaged worldwide with us
+              </p>
             </div>
           </div>
           <!-- Stat 2 -->
-          <div class="col">
+          <div class="w-full md:w-1/3">
             <div
-              class="statistics-section-text d-flex flex-column flex-lg-row gap-2 text-center align-items-lg-center wow animate__animated animate__fadeInUp"
+              class="statistics-section-text flex flex-col lg:flex-row gap-2 text-center lg:items-center wow animate__animated animate__fadeInUp"
               data-wow-offset="100"
             >
-              <h2 class="display-3 fw-bold flex-lg-shrink-0">
+              <h2
+                class="text-5xl sm:text-6xl md:text-7xl font-bold flex-shrink-0"
+              >
                 <span class="odometer" id="stat2" data-odometer-final="92"
                   >0</span
                 ><small>%</small>
               </h2>
-              <p class="lead fs-5">Increase in client satisfaction last year</p>
+              <p class="text-lg text-gray-700">
+                Increase in client satisfaction last year
+              </p>
             </div>
           </div>
           <!-- Stat 3 -->
-          <div class="col">
+          <div class="w-full md:w-1/3">
             <div
-              class="statistics-section-text d-flex flex-column flex-lg-row gap-2 text-center align-items-lg-center wow animate__animated animate__fadeInUp"
+              class="statistics-section-text flex flex-col lg:flex-row gap-2 text-center lg:items-center wow animate__animated animate__fadeInUp"
               data-wow-offset="100"
             >
-              <h2 class="display-3 fw-bold flex-lg-shrink-0">
+              <h2
+                class="text-5xl sm:text-6xl md:text-7xl font-bold flex-shrink-0"
+              >
                 <span class="odometer" id="stat3" data-odometer-final="4.5"
                   >0</span
                 ><small>%</small>
               </h2>
-              <p class="lead fs-5">Average ratings for our services</p>
+              <p class="text-lg text-gray-700">
+                Average ratings for our services
+              </p>
             </div>
           </div>
         </div>
