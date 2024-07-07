@@ -374,44 +374,44 @@
     <!-- Features1 Section -->
     <section class="features1 py-100">
       <div class="container">
-        <div class="row d-flex align-items-center">
-          <div class="col-md-6 order-last order-md-2">
+        <div class="flex flex-col md:flex-row gap-3 md:gap-6 items-center">
+          <div class="w-full md:w-1/2 order-last md:order-2">
             <div
-              class="featues1-text-container d-flex flex-column justify-content-center h-100 wow animate__animated animate__fadeInRight"
+              class="features1-text-container flex flex-col justify-center h-full wow animate__animated animate__fadeInRight"
             >
-              <span class="text-uppercase fw-semibold mb-4"
-                >Endless Possibilities</span
-              >
-              <h2 class="display-6 fw-bold mb-3">
+              <span class="uppercase font-semibold mb-6">
+                Endless Possibilities
+              </span>
+              <h2 class="text-3xl sm:text-4xl md:text-5xl font-bold mb-4">
                 Smart Solutions For Proven Results
               </h2>
-              <p class="text-muted">
+              <p class="text-gray-600 mb-4">
                 Leverage innovative tools to streamline your business processes
                 and boost your productivity
               </p>
               <ul class="features1-list simple-list">
                 <li>
-                  <p class="text-muted">
+                  <p class="text-gray-600 mb-4">
                     Customizable solutions tailored to fit your unique business
                     needs.
                   </p>
                 </li>
                 <li>
-                  <p class="text-muted">
+                  <p class="text-gray-600 mb-4">
                     Comprehensive support to ensure your success at every step.
                   </p>
                 </li>
               </ul>
             </div>
           </div>
-          <div class="col-md-6 order-first order-md-2">
+          <div class="w-full md:w-1/2 order-first md:order-2">
             <div
-              class="features1-img-container pb-3 pb-md-0 wow animate__animated animate__fadeInLeft"
+              class="features1-img-container wow animate__animated animate__fadeInLeft"
             >
               <img
                 src="images/features-img.jpg"
                 alt="features-img"
-                class="img-fluid shadow rounded-4"
+                class="w-full h-auto shadow rounded-2xl"
               />
             </div>
           </div>
@@ -421,103 +421,97 @@
 
     <!-- Features2 Section (Main Features) -->
     <section class="features2 features2-shape overflow-hidden pb-100">
-      <div class="container">
-        <div class="row d-flex align-items-center">
+      <div class="container mx-auto">
+        <div class="flex flex-col md:flex-row gap-3 md:gap-6 items-center">
           <!-- Features2 Cards -->
-          <div class="col-md-7 order-last order-md-2">
-            <div class="row text-center text-md-start">
-              <div class="col-md-6">
+          <div class="w-full md:w-7/12 order-last md:order-2">
+            <div
+              class="grid grid-cols-1 md:grid-cols-2 gap-4 text-center md:text-left"
+            >
+              <div class="mb-4 md:mb-0">
                 <!-- Features2 Card-1 -->
                 <div
-                  class="features2-card card mb-3 border-0 shadow wow animate__animated animate__fadeInRight"
+                  class="features2-card flex flex-col items-center justify-center md:justify-stretch md:items-start gap-2 h-1/2 mb-4 bg-white rounded-lg shadow p-6 wow animate__animated animate__fadeInRight"
                 >
-                  <div class="card-body m-4">
-                    <img
-                      src="https://img.icons8.com/glyph-neue/64/228BE6/goal--v1.png"
-                      alt="goal--v1"
-                      class="img-fluid mb-3"
-                    />
-                    <h6 class="carfo-title fw-bold fs-5">Digital Marketing</h6>
-                    <p class="card-text text-muted">
-                      Empower your digital campaigns with our precise targeted
-                      analytics.
-                    </p>
-                  </div>
+                  <img
+                    src="https://img.icons8.com/glyph-neue/64/228BE6/goal--v1.png"
+                    alt="goal--v1"
+                    class="w-16 h-16 mx-auto md:mx-0 mb-4"
+                  />
+                  <h6 class="font-bold text-xl">Digital Marketing</h6>
+                  <p class="text-gray-600">
+                    Empower your digital campaigns with our precise targeted
+                    analytics.
+                  </p>
                 </div>
                 <!-- Features2 Card-2 -->
                 <div
-                  class="features2-card card mb-3 border-0 shadow wow animate__animated animate__fadeInRight"
+                  class="features2-card flex flex-col items-center justify-center md:justify-stretch md:items-start gap-2 h-1/2 mb-4 bg-white rounded-lg shadow p-6 wow animate__animated animate__fadeInRight"
                 >
-                  <div class="card-body m-4">
-                    <img
-                      src="https://img.icons8.com/ios-filled/100/228BE6/financial-analytics.png"
-                      alt="financial-analytics"
-                      class="img-fluid mb-3"
-                    />
-                    <h6 class="card-title fw-bold fs-5">Data & Analytics</h6>
-                    <p class="card-text text-muted">
-                      Make data-driven decisions with our comprehensive
-                      analytics tools.
-                    </p>
-                  </div>
+                  <img
+                    src="https://img.icons8.com/ios-filled/100/228BE6/financial-analytics.png"
+                    alt="financial-analytics"
+                    class="w-16 h-16 mx-auto md:mx-0 mb-4"
+                  />
+                  <h6 class="font-bold text-xl">Data & Analytics</h6>
+                  <p class="text-gray-600">
+                    Make data-driven decisions with our comprehensive analytics
+                    tools.
+                  </p>
                 </div>
               </div>
-              <div class="col-md-6">
+              <div>
                 <!-- Features2 Card-3 -->
                 <div
-                  class="features2-card card mb-3 border-0 shadow wow animate__animated animate__fadeInRight"
+                  class="features2-card flex flex-col items-center justify-center md:justify-stretch md:items-start gap-2 h-1/2 mb-4 bg-white rounded-lg shadow p-6 wow animate__animated animate__fadeInRight"
                 >
-                  <div class="card-body m-4">
-                    <img
-                      src="https://img.icons8.com/ios-filled/100/228BE6/development-skill.png"
-                      alt="development-skill"
-                      class="img-fluid mb-3"
-                    />
-                    <h6 class="card-title fw-bold fs-5">Design & Dev</h6>
-                    <p class="card-text text-muted">
-                      Create stunning applications with our design & development
-                      services.
-                    </p>
-                  </div>
+                  <img
+                    src="https://img.icons8.com/ios-filled/100/228BE6/development-skill.png"
+                    alt="development-skill"
+                    class="w-16 h-16 mx-auto md:mx-0 mb-4"
+                  />
+                  <h6 class="font-bold text-xl">Design & Dev</h6>
+                  <p class="text-gray-600">
+                    Create stunning applications with our design & development
+                    services.
+                  </p>
                 </div>
                 <!-- Features2 Card-4 -->
                 <div
-                  class="features2-card card border-0 shadow wow animate__animated animate__fadeInRight"
+                  class="features2-card flex flex-col items-center justify-center md:justify-stretch md:items-start gap-2 h-1/2 mb-4 bg-white rounded-lg shadow p-6 wow animate__animated animate__fadeInRight"
                 >
-                  <div class="card-body m-4">
-                    <img
-                      src="https://img.icons8.com/glyph-neue/64/228BE6/process.png"
-                      alt="process"
-                      class="img-fluid mb-3"
-                    />
-                    <h6 class="card-title fw-bold fs-5">Content Strategy</h6>
-                    <p class="card-text text-muted">
-                      Develop a robust content strategy to engage & convert your
-                      audience.
-                    </p>
-                  </div>
+                  <img
+                    src="https://img.icons8.com/glyph-neue/64/228BE6/process.png"
+                    alt="process"
+                    class="w-16 h-16 mx-auto md:mx-0 mb-4"
+                  />
+                  <h6 class="font-bold text-xl">Content Strategy</h6>
+                  <p class="text-gray-600">
+                    Develop a robust content strategy to engage & convert your
+                    audience.
+                  </p>
                 </div>
               </div>
             </div>
           </div>
           <!-- Features2 Text -->
-          <div class="col-md-5 order-first order-md-2">
+          <div class="w-full md:w-5/12 order-first md:order-2">
             <div
               class="features2-text wow animate__animated animate__fadeInLeft"
             >
-              <span class="text-uppercase fw-semibold d-inline-block mb-4"
+              <span class="uppercase font-semibold inline-block mb-4"
                 >One-Stop Solutions</span
               >
-              <h2 class="display-6 fw-bold mb-3">
+              <h2 class="text-3xl sm:text-4xl md:text-5xl font-bold mb-4">
                 Innovative Solutions For Your Digital Enterprise
               </h2>
-              <p>
+              <p class="text-gray-600 mb-4">
                 Streamline your operations with our all in one business
-                solutions
+                solutions.
               </p>
-              <p>
+              <p class="text-gray-600 mb-4">
                 From marketing to analytics, we provide everything you need to
-                succeed online
+                succeed online.
               </p>
             </div>
           </div>
