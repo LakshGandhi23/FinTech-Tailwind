@@ -46,29 +46,28 @@ document.addEventListener('DOMContentLoaded', () => {
 });
 
 // Video Modal
-const videoBtn = document.querySelector('.video-btn');
-const videoModal = document.querySelector('#videoModal');
-const video = document.querySelector('#video');
-let videoSrc;
+document.addEventListener('DOMContentLoaded', function () {
+  const videoModalElement = document.getElementById('videoModal');
+  const videoIframe = document.getElementById('video');
+  const videoBtn = document.querySelector('.video-btn');
 
-if (videoBtn !== null) {
-  videoBtn.addEventListener('click', () => {
-    videoSrc = videoBtn.getAttribute('data-bs-src');
-  });
-}
+  const options = {
+    onHide: () => {
+      videoIframe.setAttribute('src', '');
+    },
+  };
+  const modal = new Modal(videoModalElement, options);
 
-if (videoModal !== null) {
-  videoModal.addEventListener('shown.bs.modal', () => {
-    video.setAttribute(
-      'src',
-      videoSrc + '?autoplay=1;modestbranding=1;showInfo=0'
-    );
+  videoBtn.addEventListener('click', function () {
+    const videoSrc = videoBtn.getAttribute('data-bs-src');
+    videoIframe.setAttribute('src', videoSrc);
+    modal.show();
   });
 
-  videoModal.addEventListener('hide.bs.modal', () => {
-    video.setAttribute('src', videoSrc);
+  videoModalElement.addEventListener('hidden.tw.modal', function () {
+    videoIframe.setAttribute('src', '');
   });
-}
+});
 
 // Wow and Odometer
 new WOW({

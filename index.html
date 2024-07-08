@@ -951,7 +951,7 @@
     </section>
 
     <!-- Features8 Section (Features Progress Content Section) -->
-    <section class="features8 pt-24">
+    <section class="features8 pt-100">
       <div class="container">
         <div class="flex flex-col md:flex-row items-center md:gap-8">
           <!-- Text Block -->
@@ -1121,55 +1121,59 @@
     <section class="features9 pt-100">
       <div class="container">
         <!-- Title -->
-        <div class="row justify-content-center mb-5">
-          <div class="col-md-10 col-lg-9">
-            <div class="features9-text-container text-center">
-              <h2 class="display-4 fw-bold mb-4">Unified Platform</h2>
-              <p class="lead">
-                Manage all your tasks and projects efficiently in one
-                centralized location
-              </p>
-            </div>
+        <div class="flex justify-center mb-10">
+          <div class="w-full md:w-4/5 lg:w-3/5 text-center">
+            <h2 class="text-4xl sm:text-5xl md:text-6xl font-bold mb-4">
+              Unified Platform
+            </h2>
+            <p class="text-xl text-gray-600">
+              Manage all your tasks and projects efficiently in one centralized
+              location
+            </p>
           </div>
         </div>
         <!-- Video -->
-        <div class="row">
-          <div class="col">
-            <div
-              class="features9-video-container wow animate__animated animate__fadeInUp position-relative"
+        <div class="flex justify-center">
+          <div class="relative wow animate__animated animate__fadeInUp">
+            <img
+              class="w-full border-4 border-gray-300 shadow-lg shadow-black/25 rounded-3xl"
+              src="https://img.youtube.com/vi/bNpx7gpSqbY/maxresdefault.jpg"
+              alt="video-image"
+            />
+            <button
+              data-modal-target="videoModal"
+              data-modal-toggle="videoModal"
+              data-bs-src="https://www.youtube.com/embed/bNpx7gpSqbY"
+              class="video-btn absolute inset-0 flex items-center justify-center"
             >
-              <img
-                class="img-fluid rounded-5 border border-5 border-black-50 shadow"
-                src="https://img.youtube.com/vi/bNpx7gpSqbY/maxresdefault.jpg"
-                alt="video-image"
-              />
-              <a
-                class="video-btn"
-                data-bs-toggle="modal"
-                data-bs-target="#videoModal"
-                data-bs-src="https://www.youtube.com/embed/bNpx7gpSqbY"
-              >
-                <span class="video-play-button">
-                  <span></span>
-                </span>
-              </a>
-            </div>
+              <span class="video-play-button">
+                <span></span>
+              </span>
+            </button>
           </div>
         </div>
       </div>
 
       <!-- Video Modal -->
-      <div class="video-modal">
-        <div id="videoModal" class="modal fade">
-          <div class="modal-dialog">
-            <div class="modal-content">
-              <div class="ratio ratio-16x9">
-                <iframe
-                  frameborder="0"
-                  class="embed-responsive-item"
-                  id="video"
-                ></iframe>
-              </div>
+      <div
+        id="videoModal"
+        tabindex="-1"
+        aria-hidden="true"
+        class="hidden overflow-y-auto overflow-x-hidden fixed top-0 right-0 left-0 z-[100] justify-center items-center w-full md:inset-0 h-[calc(100%-1rem)] max-h-full bg-gray-700/60"
+      >
+        <div class="relative p-4 w-full max-w-2xl max-h-full">
+          <!-- Modal content -->
+          <div class="relative rounded-lg shadow bg-gray-700">
+            <!-- Modal body -->
+            <div class="p-0">
+              <iframe
+                class="w-full aspect-video"
+                src=""
+                id="video"
+                frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                allowfullscreen
+              ></iframe>
             </div>
           </div>
         </div>
