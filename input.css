@@ -104,25 +104,6 @@
   .pt-100 {
     @apply pt-[6.25rem];
   }
-
-  .img-fluid {
-    @apply max-w-full h-auto;
-  }
-
-  .dropdown-menu {
-    @apply bg-white border rounded shadow-lg mt-2 absolute;
-    height: 0;
-    overflow: hidden;
-    opacity: 0;
-    transform: translateY(-1px);
-    transition: all 0.3s ease-in-out;
-  }
-
-  .dropdown-menu.open {
-    height: auto;
-    opacity: 1;
-    transform: translateY(5px);
-  }
 }
 
 /* Animate keyframes */
@@ -163,10 +144,14 @@
   padding-bottom: 0;
 }
 
+.navbar-opaque {
+  background: #fff;
+}
+
 .header {
   background: url('../images/hero-bg.jpg') center bottom no-repeat;
   background-size: cover;
-  padding-top: 170px;
+  padding-top: 10.625rem;
 }
 
 /* Divider */

@@ -53,213 +53,199 @@
   <body>
     <!-- Navigation -->
     <nav
-      class="navigation fixed top-0 w-full bg-transparent py-4 transition-all duration-100 ease-in-out z-50"
+      class="navigation bg-transparent border-gray-200 fixed top-0 w-full z-[100]"
     >
-      <div class="container mx-auto py-2 flex items-center justify-between">
-        <a href="#">
-          <img src="images/logo.png" alt="logo" class="h-11" />
+      <div
+        class="container mx-auto p-4 flex flex-wrap items-center justify-between"
+      >
+        <a href="#" class="flex items-center space-x-3 rtl:space-x-reverse">
+          <img src="images/logo.png" class="h-12" alt="Logo" />
         </a>
-        <div class="hidden lg:flex lg:items-center space-x-4">
-          <ul class="flex flex-col lg:flex-row items-center gap-4 xl:gap-8">
-            <!-- Dropdown 1 -->
-            <li class="relative">
-              <a
-                href="#"
-                class="text-base font-semibold text-gray-900"
-                id="about-toggle"
-                >About
+        <button
+          data-collapse-toggle="navbar-dropdown"
+          type="button"
+          class="inline-flex items-center p-2 w-10 h-10 justify-center text-sm text-gray-500 rounded-lg lg:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200"
+          aria-controls="navbar-dropdown"
+          aria-expanded="false"
+        >
+          <span class="sr-only">Open main menu</span>
+          <svg
+            class="w-5 h-5"
+            aria-hidden="true"
+            xmlns="http://www.w3.org/2000/svg"
+            fill="none"
+            viewBox="0 0 17 14"
+          >
+            <path
+              stroke="currentColor"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              stroke-width="2"
+              d="M1 1h15M1 7h15M1 13h15"
+            />
+          </svg>
+        </button>
+        <div class="hidden w-full lg:block lg:w-auto" id="navbar-dropdown">
+          <ul
+            class="flex flex-col justify-center lg:items-center font-medium p-4 lg:p-0 mt-4 lg:space-x-8 rtl:space-x-reverse lg:flex-row lg:mt-0"
+          >
+            <li>
+              <button
+                id="dropdownAboutLink"
+                data-dropdown-toggle="dropdownAbout"
+                class="flex items-center justify-between w-full py-2 px-3 text-gray-900 rounded hover:bg-gray-100 lg:hover:bg-transparent lg:border-0 lg:hover:text-blue-700 lg:p-0 lg:w-auto"
+              >
+                About
                 <svg
-                  class="h-4 w-4 ml-2 inline-block"
+                  class="w-2.5 h-2.5 ml-2.5"
+                  aria-hidden="true"
                   xmlns="http://www.w3.org/2000/svg"
                   fill="none"
-                  viewBox="0 0 24 24"
-                  stroke="currentColor"
+                  viewBox="0 0 10 6"
                 >
                   <path
+                    stroke="currentColor"
                     stroke-linecap="round"
                     stroke-linejoin="round"
                     stroke-width="2"
-                    d="M19 9l-7 7-7-7"
-                  /></svg
-              ></a>
-              <ul class="dropdown-menu" id="about-menu">
-                <li>
-                  <a
-                    href="#"
-                    class="block px-4 py-2 text-gray-800 hover:text-gray-950 whitespace-nowrap"
-                    >About Us</a
-                  >
-                </li>
-                <li>
-                  <a
-                    href="#"
-                    class="block px-4 py-2 text-gray-800 hover:text-gray-950 whitespace-nowrap"
-                    >Our Team</a
-                  >
-                </li>
-                <li>
-                  <a
-                    href="#"
-                    class="block px-4 py-2 text-gray-800 hover:text-gray-950 whitespace-nowrap"
-                    >Careers</a
-                  >
-                </li>
-                <li>
-                  <a
-                    href="#"
-                    class="block px-4 py-2 text-gray-800 hover:text-gray-950 whitespace-nowrap"
-                    >Blog</a
-                  >
-                </li>
-                <li>
-                  <a
-                    href="#"
-                    class="block px-4 py-2 text-gray-800 hover:text-gray-950 whitespace-nowrap"
-                    >Contact Us</a
-                  >
-                </li>
-              </ul>
+                    d="m1 1 4 4 4-4"
+                  />
+                </svg>
+              </button>
+              <!-- Dropdown menu -->
+              <div
+                id="dropdownAbout"
+                class="z-10 hidden font-normal bg-white divide-y divide-gray-100 rounded-lg shadow w-44"
+              >
+                <ul
+                  class="py-2 text-sm text-gray-700"
+                  aria-labelledby="dropdownAboutLink"
+                >
+                  <li>
+                    <a href="#" class="block px-4 py-2 hover:bg-gray-100"
+                      >About Us</a
+                    >
+                  </li>
+                  <li>
+                    <a href="#" class="block px-4 py-2 hover:bg-gray-100"
+                      >Our Team</a
+                    >
+                  </li>
+                  <li>
+                    <a href="#" class="block px-4 py-2 hover:bg-gray-100"
+                      >Careers</a
+                    >
+                  </li>
+                  <li>
+                    <a href="#" class="block px-4 py-2 hover:bg-gray-100"
+                      >Blog</a
+                    >
+                  </li>
+                  <li>
+                    <a href="#" class="block px-4 py-2 hover:bg-gray-100"
+                      >Contact Us</a
+                    >
+                  </li>
+                </ul>
+              </div>
             </li>
             <li>
-              <a href="#" class="text-base font-semibold text-gray-900"
+              <a
+                href="#"
+                class="block py-2 px-3 text-gray-900 rounded hover:bg-gray-100 lg:hover:bg-transparent lg:border-0 lg:hover:text-blue-700 lg:p-0"
                 >Services</a
               >
             </li>
             <li>
-              <a href="#" class="text-base font-semibold text-gray-900"
+              <a
+                href="#"
+                class="block py-2 px-3 text-gray-900 rounded hover:bg-gray-100 lg:hover:bg-transparent lg:border-0 lg:hover:text-blue-700 lg:p-0"
                 >Clients</a
               >
             </li>
             <li>
-              <a href="#" class="text-base font-semibold text-gray-900"
+              <a
+                href="#"
+                class="block py-2 px-3 text-gray-900 rounded hover:bg-gray-100 lg:hover:bg-transparent lg:border-0 lg:hover:text-blue-700 lg:p-0"
                 >Pricing</a
               >
             </li>
             <li>
-              <a href="#" class="text-base font-semibold text-gray-900"
+              <a
+                href="#"
+                class="block py-2 px-3 text-gray-900 rounded hover:bg-gray-100 lg:hover:bg-transparent lg:border-0 lg:hover:text-blue-700 lg:p-0"
                 >Support</a
               >
             </li>
-            <!-- Dropdown 2 -->
-            <li class="relative">
-              <a
-                href="#"
-                class="text-base font-semibold text-gray-900"
-                id="lang-toggle"
-                >Lang
+            <li>
+              <button
+                id="dropdownLangLink"
+                data-dropdown-toggle="dropdownLang"
+                class="flex items-center justify-between w-full py-2 px-3 text-gray-900 rounded hover:bg-gray-100 lg:hover:bg-transparent lg:border-0 lg:hover:text-blue-700 lg:p-0 lg:w-auto"
+              >
+                Lang
                 <svg
-                  class="h-4 w-4 ml-2 inline-block"
+                  class="w-2.5 h-2.5 ml-2.5"
+                  aria-hidden="true"
                   xmlns="http://www.w3.org/2000/svg"
                   fill="none"
-                  viewBox="0 0 24 24"
-                  stroke="currentColor"
+                  viewBox="0 0 10 6"
                 >
                   <path
+                    stroke="currentColor"
                     stroke-linecap="round"
                     stroke-linejoin="round"
                     stroke-width="2"
-                    d="M19 9l-7 7-7-7"
-                  /></svg
-              ></a>
-              <ul class="dropdown-menu" id="lang-menu">
-                <li>
-                  <a
-                    href="#"
-                    class="block px-4 py-2 text-gray-800 hover:text-gray-950 whitespace-nowrap"
-                    >Spanish</a
-                  >
-                </li>
-                <li>
-                  <a
-                    href="#"
-                    class="block px-4 py-2 text-gray-800 hover:text-gray-950 whitespace-nowrap"
-                    >Hindi</a
-                  >
-                </li>
-                <li>
-                  <a
-                    href="#"
-                    class="block px-4 py-2 text-gray-800 hover:text-gray-950 whitespace-nowrap"
-                    >French</a
-                  >
-                </li>
-                <li>
-                  <a
-                    href="#"
-                    class="block px-4 py-2 text-gray-800 hover:text-gray-950 whitespace-nowrap"
-                    >Italian</a
-                  >
-                </li>
-                <li>
-                  <a
-                    href="#"
-                    class="block px-4 py-2 text-gray-800 hover:text-gray-950 whitespace-nowrap"
-                    >Dutch</a
-                  >
-                </li>
-              </ul>
+                    d="m1 1 4 4 4-4"
+                  />
+                </svg>
+              </button>
+              <!-- Dropdown menu -->
+              <div
+                id="dropdownLang"
+                class="z-10 hidden font-normal bg-white divide-y divide-gray-100 rounded-lg shadow w-44"
+              >
+                <ul
+                  class="py-2 text-sm text-gray-700"
+                  aria-labelledby="dropdownLangLink"
+                >
+                  <li>
+                    <a href="#" class="block px-4 py-2 hover:bg-gray-100"
+                      >Spanish</a
+                    >
+                  </li>
+                  <li>
+                    <a href="#" class="block px-4 py-2 hover:bg-gray-100"
+                      >Hindi</a
+                    >
+                  </li>
+                  <li>
+                    <a href="#" class="block px-4 py-2 hover:bg-gray-100"
+                      >French</a
+                    >
+                  </li>
+                  <li>
+                    <a href="#" class="block px-4 py-2 hover:bg-gray-100"
+                      >Italian</a
+                    >
+                  </li>
+                  <li>
+                    <a href="#" class="block px-4 py-2 hover:bg-gray-100"
+                      >Dutch</a
+                    >
+                  </li>
+                </ul>
+              </div>
             </li>
-            <li><a href="#" class="btn btn-primary">Get Started</a></li>
+            <li>
+              <a
+                href="#"
+                class="block btn btn-primary btn-lg py-2 px-3 font-normal text-base"
+                >Get Started</a
+              >
+            </li>
           </ul>
         </div>
-        <!-- Hamburger -->
-        <div
-          id="hamburger"
-          class="lg:hidden text-gray-500 outline-none focus:outline-gray-900 cursor-pointer"
-        >
-          <svg class="h-6 w-6 fill-current" viewBox="0 0 24 24">
-            <path
-              fill-rule="evenodd"
-              d="M4 5h16a1 1 0 0 1 0 2H4a1 1 0 1 1 0-2zm0 6h16a1 1 0 0 1 0 2H4a1 1 0 0 1 0-2zm0 6h16a1 1 0 0 1 0 2H4a1 1 0 0 1 0-2z"
-            />
-          </svg>
-        </div>
-      </div>
-      <!-- Mobile Menu -->
-      <div id="mobile-menu" class="lg:hidden bg-white hidden">
-        <ul class="flex flex-col items-start gap-4 py-4 px-8">
-          <li>
-            <a href="#"
-              >About
-              <svg
-                class="h-4 w-4 ml-2 inline-block"
-                xmlns="http://www.w3.org/2000/svg"
-                fill="none"
-                viewBox="0 0 24 24"
-                stroke="currentColor"
-              >
-                <path
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                  stroke-width="2"
-                  d="M19 9l-7 7-7-7"
-                /></svg
-            ></a>
-          </li>
-          <li><a href="#">Services</a></li>
-          <li><a href="#">Clients</a></li>
-          <li><a href="#">Pricing</a></li>
-          <li><a href="#">Support</a></li>
-          <li>
-            <a href="#"
-              >Lang
-              <svg
-                class="h-4 w-4 ml-2 inline-block"
-                xmlns="http://www.w3.org/2000/svg"
-                fill="none"
-                viewBox="0 0 24 24"
-                stroke="currentColor"
-              >
-                <path
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                  stroke-width="2"
-                  d="M19 9l-7 7-7-7"
-                /></svg
-            ></a>
-          </li>
-          <li><a href="#" class="btn btn-primary">Get Started</a></li>
-        </ul>
       </div>
     </nav>
 
@@ -283,7 +269,7 @@
                   ease and confidence
                 </p>
                 <div
-                  class="hero-section-buttons flex items-center justify-center gap-3"
+                  class="hero-section-buttons flex items-center justify-center gap-4"
                 >
                   <a href="#" class="btn btn-primary btn-lg">Get Started Now</a>
                   <a href="#" class="btn btn-outline-secondary btn-lg border-2"
@@ -380,7 +366,7 @@
     <!-- Features1 Section -->
     <section class="features1 py-100">
       <div class="container">
-        <div class="flex flex-col md:flex-row gap-3 md:gap-6 items-center">
+        <div class="flex flex-col md:flex-row gap-6 md:gap-12 items-center">
           <div class="w-full md:w-1/2 order-last md:order-2">
             <div
               class="features1-text-container flex flex-col justify-center h-full wow animate__animated animate__fadeInRight"
@@ -428,7 +414,7 @@
     <!-- Features2 Section (Main Features) -->
     <section class="features2 features2-shape overflow-hidden pb-100">
       <div class="container mx-auto">
-        <div class="flex flex-col md:flex-row gap-3 md:gap-6 items-center">
+        <div class="flex flex-col md:flex-row gap-6 md:gap-12 items-center">
           <!-- Features2 Cards -->
           <div class="w-full md:w-7/12 order-last md:order-2">
             <div
@@ -505,10 +491,10 @@
             <div
               class="features2-text wow animate__animated animate__fadeInLeft"
             >
-              <span class="uppercase font-semibold inline-block mb-4"
+              <span class="uppercase font-semibold inline-block mb-6"
                 >One-Stop Solutions</span
               >
-              <h2 class="text-3xl sm:text-4xl md:text-5xl font-bold mb-4">
+              <h2 class="text-3xl sm:text-4xl md:text-5xl font-bold mb-5">
                 Innovative Solutions For Your Digital Enterprise
               </h2>
               <p class="text-gray-600 mb-4">
@@ -539,7 +525,7 @@
           </div>
         </div>
         <!-- Features3 Cards -->
-        <div class="flex flex-col md:flex-row gap-6 items-center">
+        <div class="flex flex-col md:flex-row gap-6 md:gap-12 items-center">
           <!-- Features3 Card-1 -->
           <div class="w-full md:w-1/2">
             <div
@@ -625,10 +611,10 @@
         </div>
 
         <!-- Features4 Cards -->
-        <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-6 md:gap-12">
           <!-- Features4 Card-1 -->
           <div
-            class="flex flex-col items-center wow animate__animated animate__fadeInUp"
+            class="flex flex-col gap-2 items-center wow animate__animated animate__fadeInUp"
           >
             <img
               src="images/incredible-feat-1.jpg"
@@ -645,7 +631,7 @@
           </div>
           <!-- Features4 Card-2 -->
           <div
-            class="flex flex-col items-center wow animate__animated animate__fadeInUp"
+            class="flex flex-col gap-2 items-center wow animate__animated animate__fadeInUp"
           >
             <img
               src="images/incredible-feat-2.jpg"
@@ -663,7 +649,7 @@
           </div>
           <!-- Features4 Card-3 -->
           <div
-            class="flex flex-col items-center wow animate__animated animate__fadeInUp"
+            class="flex flex-col gap-2 items-center wow animate__animated animate__fadeInUp"
           >
             <img
               src="images/incredible-feat-3.jpg"
@@ -685,16 +671,16 @@
     <!-- Features5 Section (Features Content Section) -->
     <section class="features5 pt-100 overflow-hidden">
       <div class="container mx-auto">
-        <div class="flex flex-col md:flex-row items-center gap-4">
+        <div class="flex flex-col md:flex-row items-center gap-6 md:gap-12">
           <!-- Text Block -->
           <div class="w-full md:w-1/2 order-last md:order-2">
             <div
               class="features5-text-container wow animate__animated animate__fadeInRight"
             >
-              <span class="uppercase font-semibold inline-block mb-4"
+              <span class="uppercase font-semibold inline-block mb-6"
                 >Personalized Strategy</span
               >
-              <h2 class="text-4xl sm:text-5xl font-bold mb-4">
+              <h2 class="text-4xl sm:text-5xl font-bold mb-5">
                 Effectively Engage Your Target Market
               </h2>
               <p class="text-gray-600 mb-4">
@@ -707,8 +693,8 @@
                 Develop effective content strategies to engage your target
                 audience.
               </p>
-              <div class="flex flex-col md:flex-row gap-6">
-                <div class="flex-auto">
+              <div class="flex flex-col md:flex-row gap-6 mb-8">
+                <div class="flex-auto p-6 shadow-lg shadow-black/20 rounded-lg">
                   <img
                     src="https://img.icons8.com/ios-filled/50/228BE6/idea--v1.png"
                     alt="idea--v1"
@@ -721,7 +707,7 @@
                     driven insights.
                   </p>
                 </div>
-                <div class="flex-auto">
+                <div class="flex-auto p-6 shadow-lg shadow-black/20 rounded-lg">
                   <img
                     src="https://img.icons8.com/glyph-neue/64/228BE6/change.png"
                     alt="change"
@@ -754,7 +740,7 @@
     </section>
 
     <!-- Features6 Section (Features Solutions Section) -->
-    <section class="features6 pt-100">
+    <section class="features6 pt-[4.25rem]">
       <div class="container mx-auto">
         <!-- Text Block -->
         <div class="text-center mb-12">
@@ -906,7 +892,7 @@
     <!-- Features7 Section (Feature Solutions Progress Section) -->
     <section class="features7 pt-100">
       <div class="container mx-auto bg-light rounded-4">
-        <div class="flex flex-col lg:flex-row items-center">
+        <div class="flex flex-col lg:flex-row items-center gap-6 md:gap-12">
           <!-- Image Block -->
           <div
             class="w-full lg:w-7/12 px-4 py-5 wow animate__animated animate__fadeInRight"
@@ -920,17 +906,17 @@
           <!-- Text Block -->
           <div class="w-full lg:w-5/12 order-last md:order-2">
             <div
-              class="features7-text-container flex flex-col justify-center h-full p-6 wow animate__animated animate__fadeInLeft"
+              class="features7-text-container flex flex-col justify-center h-full py-6 wow animate__animated animate__fadeInLeft"
             >
               <img
                 src="https://img.icons8.com/external-smashingstocks-mixed-smashing-stocks/68/228BE6/external-puzzle-game-hobbies-and-interest-smashingstocks-mixed-smashing-stocks.png"
                 alt="external-puzzle-game-hobbies-and-interest-smashingstocks-mixed-smashing-stocks"
-                class="features7-card-img w-16 h-16 mb-3"
+                class="features7-card-img w-16 h-16 mb-6"
               />
-              <h5 class="text-3xl lg:text-4xl font-bold mb-3">
+              <h5 class="text-3xl lg:text-4xl font-bold mb-4">
                 Solutions to Drive Your Business Success
               </h5>
-              <ul class="features7-list list-disc pl-5 space-y-2">
+              <ul class="features7-list list-disc pl-5 space-y-4">
                 <li>
                   <p class="text-gray-600">
                     Our analytics tools provide you with the insights you need
@@ -953,7 +939,7 @@
     <!-- Features8 Section (Features Progress Content Section) -->
     <section class="features8 pt-100">
       <div class="container">
-        <div class="flex flex-col md:flex-row items-center md:gap-8">
+        <div class="flex flex-col md:flex-row items-center gap-6 md:gap-12">
           <!-- Text Block -->
           <div class="w-full md:w-1/2 order-last md:order-2">
             <div
@@ -1181,55 +1167,57 @@
     </section>
 
     <!-- Features10 Section (Features Statistics Second Section) -->
-    <section class="features10 pt-100 mb-5">
-      <div class="container">
+    <section class="features10 pt-100 mb-20">
+      <div class="container mx-auto">
         <!-- Statistics Blocks -->
-        <div class="row row-cols-1 row-cols-md-3 text-center">
+        <div class="flex flex-col md:flex-row text-center">
           <!-- Statistics Block-1 -->
-          <div class="col">
+          <div class="w-full md:w-1/3 p-4">
             <div
               class="features10-block wow animate__animated animate__fadeInUp"
               data-wow-offset="100"
             >
-              <h2 class="display-4 fw-bold">
+              <h2 class="text-6xl font-bold flex items-baseline justify-center">
                 <span class="odometer" id="stat1" data-odometer-final="67"
                   >0</span
-                ><small>%</small>
+                ><small class="text-inherit font-bold">%</small>
               </h2>
-              <hr class="divider-stats mx-auto my-4" />
-              <p>Boost in productivity and teamwork after using our tools</p>
+              <hr class="border-t-2 border-gray-800 mx-auto my-4 w-1/2" />
+              <p class="text-lg font-medium">
+                Boost in productivity and teamwork after using our tools
+              </p>
             </div>
           </div>
           <!-- Statistics Block-2 -->
-          <div class="col">
+          <div class="w-full md:w-1/3 p-4">
             <div
               class="features10-block wow animate__animated animate__fadeInUp"
               data-wow-offset="100"
             >
-              <h2 class="display-4 fw-bold">
+              <h2 class="text-6xl font-bold flex items-baseline justify-center">
                 <span class="odometer" id="stat2" data-odometer-final="89"
                   >0</span
-                ><small>%</small>
+                ><small class="text-inherit font-bold">%</small>
               </h2>
-              <hr class="divider-stats mx-auto my-4" />
-              <p>
+              <hr class="border-t-2 border-gray-800 mx-auto my-4 w-1/2" />
+              <p class="text-lg font-medium">
                 Percentage of users who see significant workflow improvements
               </p>
             </div>
           </div>
           <!-- Statistics Block-3 -->
-          <div class="col">
+          <div class="w-full md:w-1/3 p-4">
             <div
               class="features10-block wow animate__animated animate__fadeInUp"
               data-wow-offset="100"
             >
-              <h2 class="display-4 fw-bold">
+              <h2 class="text-6xl font-bold flex items-baseline justify-center">
                 <span class="odometer" id="stat3" data-odometer-final="15"
                   >0</span
-                ><small>K</small>
+                ><small class="text-inherit font-bold">K</small>
               </h2>
-              <hr class="divider-stats mx-auto my-4" />
-              <p>
+              <hr class="border-t-2 border-gray-800 mx-auto my-4 w-1/2" />
+              <p class="text-lg font-medium">
                 Number of satisfied users worldwide enjoying seamless management
               </p>
             </div>
@@ -1239,106 +1227,108 @@
     </section>
 
     <!-- Features11 Section (Features Customers Section) -->
-    <section class="features11 py-100 bg-light">
+    <section class="features11 py-100 bg-gray-100">
       <div class="container">
-        <div class="row">
+        <div
+          class="flex flex-col justify-center md:flex-row md:items-center gap-6 shadow-lg shadow-black/20 rounded-lg p-6 bg-white"
+        >
           <!-- Text -->
-          <div class="col-md-5 mb-5 mb-md-0">
+          <div class="w-full md:w-2/5 mb-2 md:mb-0">
             <div
-              class="features11-text-container text-center text-md-start wow animate__animated animate__fadeInRight"
+              class="features11-text-container text-center md:text-left wow animate__animated animate__fadeInRight"
             >
-              <span class="text-uppercase fw-semibold d-inline-block mb-4"
+              <span class="uppercase font-semibold block mb-6"
                 >Our satisfied customers</span
               >
-              <h3 class="display-5 fw-bold">
+              <h3 class="text-4xl sm:text-5xl font-bold">
                 Join 2,000+ Leading Digital Agencies Globally
               </h3>
             </div>
           </div>
           <!-- Images -->
-          <div class="col-md-7">
+          <div class="w-full md:w-3/5">
             <div
               class="features11-img-container wow animate__animated animate__fadeInLeft"
             >
-              <div class="row row-cols-3 g-5 g-md-4">
-                <div class="col">
+              <div class="grid grid-cols-3 gap-5 md:gap-4">
+                <div class="col-span-1">
                   <a href="#">
                     <img
                       src="images/brand-1.png"
                       alt="brand-1"
-                      class="features11-card-img img-fluid"
+                      class="features11-card-img w-25 h-auto p-4"
                     />
                   </a>
                 </div>
-                <div class="col">
+                <div class="col-span-1">
                   <a href="#">
                     <img
                       src="images/brand-2.png"
                       alt="brand-2"
-                      class="features11-card-img img-fluid"
+                      class="features11-card-img w-25 h-auto p-4"
                     />
                   </a>
                 </div>
-                <div class="col">
+                <div class="col-span-1">
                   <a href="#">
                     <img
                       src="images/brand-3.png"
                       alt="brand-3"
-                      class="features11-card-img img-fluid"
+                      class="features11-card-img w-25 h-auto p-4"
                     />
                   </a>
                 </div>
-                <div class="col">
+                <div class="col-span-1">
                   <a href="#">
                     <img
                       src="images/brand-4.png"
                       alt="brand-4"
-                      class="features11-card-img img-fluid"
+                      class="features11-card-img w-25 h-auto p-4"
                     />
                   </a>
                 </div>
-                <div class="col">
+                <div class="col-span-1">
                   <a href="#">
                     <img
                       src="images/brand-5.png"
                       alt="brand-5"
-                      class="features11-card-img img-fluid"
+                      class="features11-card-img w-25 h-auto p-4"
                     />
                   </a>
                 </div>
-                <div class="col">
+                <div class="col-span-1">
                   <a href="#">
                     <img
                       src="images/brand-6.png"
                       alt="brand-6"
-                      class="features11-card-img img-fluid"
+                      class="features11-card-img w-25 h-auto p-4"
                     />
                   </a>
                 </div>
-                <div class="col">
+                <div class="col-span-1">
                   <a href="#">
                     <img
                       src="images/brand-7.png"
                       alt="brand-7"
-                      class="features11-card-img img-fluid"
+                      class="features11-card-img w-25 h-auto p-4"
                     />
                   </a>
                 </div>
-                <div class="col">
+                <div class="col-span-1">
                   <a href="#">
                     <img
                       src="images/brand-8.png"
                       alt="brand-8"
-                      class="features11-card-img img-fluid"
+                      class="features11-card-img w-25 h-auto p-4"
                     />
                   </a>
                 </div>
-                <div class="col">
+                <div class="col-span-1">
                   <a href="#">
                     <img
                       src="images/brand-9.png"
                       alt="brand-9"
-                      class="features11-card-img img-fluid"
+                      class="features11-card-img w-25 h-auto p-4"
                     />
                   </a>
                 </div>

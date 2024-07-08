@@ -1,49 +1,32 @@
 // Nav scroll
 function userScroll() {
-  let hamburgerOpen = false;
   const navbar = document.querySelector('.navigation');
-  const mobileMenu = document.getElementById('mobile-menu');
+  const menuButton = document.querySelector(
+    '[data-collapse-toggle="navbar-dropdown"]'
+  );
 
   const handleScroll = () => {
     const scrolled = window.scrollY > 50;
+    const isMenuOpen = menuButton.getAttribute('aria-expanded') === 'true';
+
     navbar.classList.toggle('navbar-sticky', scrolled);
-    navbar.classList.toggle('bg-transparent', !scrolled && !hamburgerOpen);
-    navbar.classList.toggle('bg-white', scrolled || hamburgerOpen);
+    navbar.classList.toggle('py-4', !scrolled);
+    navbar.classList.toggle('navbar-opaque', isMenuOpen && !scrolled);
   };
 
   window.addEventListener('scroll', handleScroll);
 
-  document.getElementById('hamburger').addEventListener('click', () => {
-    hamburgerOpen = !hamburgerOpen;
-    mobileMenu.classList.toggle('hidden');
-    mobileMenu.classList.toggle('block');
-    handleScroll();
-  });
+  const handleMenuClick = () => {
+    const isMenuOpen = menuButton.getAttribute('aria-expanded') === 'true';
+    navbar.classList.toggle('navbar-opaque', isMenuOpen);
+  };
 
-  handleScroll(); // Initial call to set the correct state on page load
+  navbar.addEventListener('click', handleMenuClick);
+
+  handleScroll();
 }
 
 document.addEventListener('DOMContentLoaded', userScroll);
-
-// dropdown menu
-
-document.addEventListener('DOMContentLoaded', () => {
-  // Dropdown toggles
-  const aboutToggle = document.getElementById('about-toggle');
-  const langToggle = document.getElementById('lang-toggle');
-
-  aboutToggle.addEventListener('click', (e) => {
-    e.preventDefault();
-    const aboutDropdown = document.getElementById('about-menu');
-    aboutDropdown.classList.toggle('open');
-  });
-
-  langToggle.addEventListener('click', (e) => {
-    e.preventDefault();
-    const langDropdown = document.getElementById('lang-menu');
-    langDropdown.classList.toggle('open');
-  });
-});
 
 // Video Modal
 document.addEventListener('DOMContentLoaded', function () {
