@@ -50,6 +50,7 @@
     .btn {
       @apply px-3 py-1.5 text-base;
     }
+
     .btn-lg {
       @apply py-2.5 px-5 text-base;
     }
@@ -59,6 +60,7 @@
     .btn {
       @apply px-4 py-2 text-lg;
     }
+
     .btn-lg {
       @apply py-3 px-6 text-lg;
     }
@@ -68,14 +70,11 @@
     .btn {
       @apply px-5 py-2.5 text-xl;
     }
+
     .btn-lg {
       @apply py-3.5 px-7 text-xl;
     }
   }
-
-  /* .btn:hover {
-    @apply transform scale-105;
-  } */
 
   .container {
     @apply mx-auto px-4;
@@ -319,28 +318,10 @@
 
 /* media queries */
 
-@media (max-width: 1200px) {
-  .features11-text-container span {
-    font-size: 1rem;
-  }
-
-  .features11-text-container h3 {
-    font-size: 2.2rem;
-  }
-}
-
 @media (max-width: 992px) {
   .wow {
     animation-name: none !important;
     visibility: visible !important;
-  }
-
-  .features11-text-container span {
-    font-size: 0.8rem;
-  }
-
-  .features11-text-container h3 {
-    font-size: 1.8rem;
   }
 }
 
@@ -354,37 +335,26 @@
 
 @media (max-width: 576px) {
   html {
-    font-size: 87.5%; /* 1rem = 14px */
+    /* 1rem = 14px */
+    font-size: 87.5%;
   }
 
   .container {
     max-width: 90%;
   }
-
-  .banner-text-container {
-    text-align: center;
-  }
-
-  .banner-section-buttons {
-    justify-content: center !important;
-  }
 }
 
 @media (max-width: 428px) {
   html {
-    font-size: 75%; /* 1rem = 12px */
-  }
-
-  .hero-section-buttons,
-  .banner-section-buttons {
-    flex-direction: column;
-    align-items: stretch !important;
+    /* 1rem = 12px */
+    font-size: 75%;
   }
 }
 
 @media (max-width: 320px) {
   html {
-    font-size: 62.5%; /* 1rem = 10px */
+    /* 1rem = 10px */
+    font-size: 62.5%;
   }
 
   .slick-dots {

@@ -269,7 +269,7 @@
                   ease and confidence
                 </p>
                 <div
-                  class="hero-section-buttons flex items-center justify-center gap-4"
+                  class="hero-section-buttons flex flex-col sm:flex-row justify-center gap-4"
                 >
                   <a href="#" class="btn btn-primary btn-lg">Get Started Now</a>
                   <a href="#" class="btn btn-outline-secondary btn-lg border-2"
@@ -1760,16 +1760,18 @@
     <section class="features16 pt-100">
       <div class="container">
         <div class="banner-img shadow-lg shadow-black/25 rounded-3xl">
-          <div class="flex flex-wrap items-center">
+          <div class="text-center lg:text-left">
             <!-- Text -->
-            <div class="banner-text-container md:w-8/12 lg:w-7/12 p-8">
-              <h4 class="text-3xl md:text-4xl font-bold mb-4">
+            <div class="banner-text-container md:11/12 xl:w-10/12 p-8">
+              <h4 class="text-3xl md:text-4xl xl:text-5xl font-bold mb-8">
                 Join 2,000+ Thriving Businesses<br />With FinTech
               </h4>
-              <p class="text-gray-600 text-lg md:text-xl font-semibold mb-4">
+              <p class="text-gray-600 text-lg md:text-xl font-semibold mb-6">
                 Start your free 7-day trial. No credit card required
               </p>
-              <div class="banner-section-buttons flex items-center gap-4">
+              <div
+                class="banner-section-buttons flex flex-col items-stretch lg:flex-row lg:justify-start gap-4"
+              >
                 <a href="#" class="btn btn-primary btn-lg">Get Started</a>
                 <a href="#" class="btn btn-outline-secondary btn-lg border-2"
                   >View Pricing</a
@@ -1782,361 +1784,560 @@
     </section>
 
     <!-- Footer Section -->
-    <footer class="footer-section pt-100 pb-50">
-      <div class="container">
-        <!-- large Screen footer -->
-        <div class="row d-none d-md-flex">
+    <footer class="footer-section pt-24 pb-12">
+      <div class="container mx-auto px-4">
+        <!-- Large Screen Footer -->
+        <div class="hidden md:flex flex-wrap -mx-4">
           <!-- Fo Section 1 -->
-          <div class="col-md-3">
+          <div class="w-full md:w-1/4 px-4">
             <div class="fo-section">
-              <h6 class="fo-title fs-5 fw-bold mb-4">FinTech</h6>
-              <ul class="fo-links">
+              <h6 class="fo-title text-lg font-bold mb-4">FinTech</h6>
+              <ul class="fo-links space-y-2">
                 <li>
-                  <p><a href="services.html">Core Services</a></p>
+                  <a
+                    href="services.html"
+                    class="text-gray-500 hover:text-gray-900"
+                    >Core Services</a
+                  >
                 </li>
                 <li>
-                  <p><a href="integrations.html">Integrations</a></p>
+                  <a
+                    href="integrations.html"
+                    class="text-gray-500 hover:text-gray-900"
+                    >Integrations</a
+                  >
                 </li>
                 <li>
-                  <p><a href="projects.html">Latest Projects</a></p>
+                  <a
+                    href="projects.html"
+                    class="text-gray-500 hover:text-gray-900"
+                    >Latest Projects</a
+                  >
                 </li>
                 <li>
-                  <p><a href="pricing.html">Pricing Plans</a></p>
+                  <a
+                    href="pricing.html"
+                    class="text-gray-500 hover:text-gray-900"
+                    >Pricing Plans</a
+                  >
                 </li>
                 <li>
-                  <p><a href="faqs.html">Help & Support</a></p>
+                  <a href="faqs.html" class="text-gray-500 hover:text-gray-900"
+                    >Help & Support</a
+                  >
                 </li>
                 <li>
-                  <p><a href="#">Advertising</a></p>
+                  <a href="#" class="text-gray-500 hover:text-gray-900"
+                    >Advertising</a
+                  >
                 </li>
               </ul>
             </div>
           </div>
           <!-- Fo Section 2 -->
-          <div class="col-md-3">
+          <div class="w-full md:w-1/4 px-4">
             <div class="fo-section">
-              <h6 class="fo-title fs-5 fw-bold mb-4">Solutions</h6>
-              <ul class="fo-links">
+              <h6 class="fo-title text-lg font-bold mb-4">Solutions</h6>
+              <ul class="fo-links space-y-2">
                 <li>
-                  <p><a href="#">Advanced Analytics</a></p>
+                  <a href="#" class="text-gray-500 hover:text-gray-900"
+                    >Advanced Analytics</a
+                  >
                 </li>
                 <li>
-                  <p><a href="#">Customer Insights</a></p>
+                  <a href="#" class="text-gray-500 hover:text-gray-900"
+                    >Customer Insights</a
+                  >
                 </li>
                 <li>
-                  <p><a href="#">Market Trends</a></p>
+                  <a href="#" class="text-gray-500 hover:text-gray-900"
+                    >Market Trends</a
+                  >
                 </li>
                 <li>
-                  <p><a href="#">Operational Efficiency</a></p>
+                  <a href="#" class="text-gray-500 hover:text-gray-900"
+                    >Operational Efficiency</a
+                  >
                 </li>
                 <li>
-                  <p><a href="#">Performance Metrics</a></p>
+                  <a href="#" class="text-gray-500 hover:text-gray-900"
+                    >Performance Metrics</a
+                  >
                 </li>
                 <li>
-                  <p><a href="#">Scalable Solutions</a></p>
+                  <a href="#" class="text-gray-500 hover:text-gray-900"
+                    >Scalable Solutions</a
+                  >
                 </li>
               </ul>
             </div>
           </div>
           <!-- Fo Section 3/4 -->
-          <div class="col-md-3">
+          <div class="w-full md:w-1/4 px-4">
             <div class="fo-section">
-              <h6 class="fo-title fs-5 fw-bold mb-4">Discover</h6>
-              <ul class="fo-links">
+              <h6 class="fo-title text-lg font-bold mb-4">Discover</h6>
+              <ul class="fo-links space-y-2">
                 <li>
-                  <p><a href="reviews.html">Success Stories</a></p>
+                  <a
+                    href="reviews.html"
+                    class="text-gray-500 hover:text-gray-900"
+                    >Success Stories</a
+                  >
                 </li>
                 <li>
-                  <p><a href="blog-listing.html">Our Blog</a></p>
+                  <a
+                    href="blog-listing.html"
+                    class="text-gray-500 hover:text-gray-900"
+                    >Our Blog</a
+                  >
                 </li>
               </ul>
             </div>
-            <div class="fo-section">
-              <h6 class="fo-title fs-5 fw-bold mb-4">Legal</h6>
-              <ul class="fo-links">
+            <div class="fo-section mt-4">
+              <h6 class="fo-title text-lg font-bold mb-4">Legal</h6>
+              <ul class="fo-links space-y-2">
                 <li>
-                  <p><a href="terms.html">Terms of Use</a></p>
+                  <a href="terms.html" class="text-gray-500 hover:text-gray-900"
+                    >Terms of Use</a
+                  >
                 </li>
                 <li>
-                  <p><a href="privacy.html">Privacy Policy</a></p>
+                  <a
+                    href="privacy.html"
+                    class="text-gray-500 hover:text-gray-900"
+                    >Privacy Policy</a
+                  >
                 </li>
                 <li>
-                  <p><a href="cookies.html">Cookie Policy</a></p>
+                  <a
+                    href="cookies.html"
+                    class="text-gray-500 hover:text-gray-900"
+                    >Cookie Policy</a
+                  >
                 </li>
               </ul>
             </div>
           </div>
           <!-- Fo Section 5 -->
-          <div class="col-md-3">
+          <div class="w-full md:w-1/4 px-4">
             <div class="fo-section">
-              <h6 class="fo-title fs-5 fw-bold mb-4">About Us</h6>
-              <ul class="fo-links">
+              <h6 class="fo-title text-lg font-bold mb-4">About Us</h6>
+              <ul class="fo-links space-y-2">
                 <li>
-                  <p><a href="about.html">About Us</a></p>
+                  <a href="about.html" class="text-gray-500 hover:text-gray-900"
+                    >About Us</a
+                  >
                 </li>
                 <li>
-                  <p><a href="team.html">Our Team</a></p>
+                  <a href="team.html" class="text-gray-500 hover:text-gray-900"
+                    >Our Team</a
+                  >
                 </li>
                 <li>
-                  <p><a href="careers.html">Careers</a></p>
+                  <a
+                    href="careers.html"
+                    class="text-gray-500 hover:text-gray-900"
+                    >Careers</a
+                  >
                 </li>
               </ul>
             </div>
             <div class="footer-form mt-2">
-              <h6 class="fo-title fs-5 fw-bold mb-4">Follow the Best</h6>
+              <h6 class="fo-title text-lg font-bold mb-4">Follow the Best</h6>
               <form>
-                <div class="input-group">
+                <div class="flex">
                   <input
                     id="email"
                     type="email"
-                    class="form-control"
+                    class="form-input px-4 py-2 rounded-l-md w-11/12"
                     placeholder="Email Address"
                     required
                     autocomplete="email"
                   />
-                  <button class="btn btn-primary" type="button">&#8594;</button>
+                  <button
+                    class="btn btn-primary px-4 py-2 rounded-l-none rounded-r-md"
+                    type="button"
+                  >
+                    &#8594;
+                  </button>
                 </div>
               </form>
             </div>
           </div>
         </div>
         <!-- Small Screen Footer -->
-        <div class="row d-md-none">
-          <div class="accordion accordion-flush" id="footerAccordion">
+        <div class="block md:hidden">
+          <div
+            id="accordion-small-footer"
+            data-accordion="collapse"
+            data-active-classes="bg-white text-gray-900"
+            data-inactive-classes="text-gray-500"
+          >
             <!-- Accordion 1 -->
-            <div class="accordion-item">
-              <h2 class="accordion-header" id="headingOne">
-                <button
-                  class="accordion-button collapsed fs-5 fw-bold"
-                  type="button"
-                  data-bs-toggle="collapse"
-                  data-bs-target="#collapseOne"
-                  aria-expanded="false"
-                  aria-controls="collapseOne"
-                >
-                  FinTech
-                </button>
-              </h2>
-              <div
-                id="collapseOne"
-                class="accordion-collapse collapse"
-                aria-labelledby="headingOne"
-                data-bs-parent="#footerAccordion"
+            <h2 id="accordion-small-footer-heading-1">
+              <button
+                type="button"
+                class="flex items-center justify-between w-full py-4 text-lg font-bold text-gray-500 border-b border-gray-200"
+                data-accordion-target="#accordion-small-footer-body-1"
+                aria-expanded="true"
+                aria-controls="accordion-small-footer-body-1"
               >
-                <div class="accordion-body">
-                  <ul class="fo-links">
-                    <li>
-                      <p><a href="services.html">Core Services</a></p>
-                    </li>
-                    <li>
-                      <p><a href="integrations.html">Integrations</a></p>
-                    </li>
-                    <li>
-                      <p><a href="projects.html">Latest Projects</a></p>
-                    </li>
-                    <li>
-                      <p><a href="pricing.html">Pricing Plans</a></p>
-                    </li>
-                    <li>
-                      <p><a href="faqs.html">Help & Support</a></p>
-                    </li>
-                    <li>
-                      <p><a href="#">Advertising</a></p>
-                    </li>
-                  </ul>
-                </div>
+                FinTech
+                <svg
+                  data-accordion-icon
+                  class="w-3 h-3 rotate-180 shrink-0"
+                  aria-hidden="true"
+                  xmlns="http://www.w3.org/2000/svg"
+                  fill="none"
+                  viewBox="0 0 10 6"
+                >
+                  <path
+                    stroke="currentColor"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    d="M9 5 5 1 1 5"
+                  />
+                </svg>
+              </button>
+            </h2>
+            <div
+              id="accordion-small-footer-body-1"
+              class="hidden"
+              aria-labelledby="accordion-small-footer-heading-1"
+            >
+              <div class="py-4 border-b border-gray-200">
+                <ul class="fo-links space-y-2">
+                  <li>
+                    <a
+                      href="services.html"
+                      class="text-gray-500 hover:text-gray-900"
+                      >Core Services</a
+                    >
+                  </li>
+                  <li>
+                    <a
+                      href="integrations.html"
+                      class="text-gray-500 hover:text-gray-900"
+                      >Integrations</a
+                    >
+                  </li>
+                  <li>
+                    <a
+                      href="projects.html"
+                      class="text-gray-500 hover:text-gray-900"
+                      >Latest Projects</a
+                    >
+                  </li>
+                  <li>
+                    <a
+                      href="pricing.html"
+                      class="text-gray-500 hover:text-gray-900"
+                      >Pricing Plans</a
+                    >
+                  </li>
+                  <li>
+                    <a
+                      href="faqs.html"
+                      class="text-gray-500 hover:text-gray-900"
+                      >Help & Support</a
+                    >
+                  </li>
+                  <li>
+                    <a href="#" class="text-gray-500 hover:text-gray-900"
+                      >Advertising</a
+                    >
+                  </li>
+                </ul>
               </div>
             </div>
             <!-- Accordion 2 -->
-            <div class="accordion-item">
-              <h2 class="accordion-header" id="headingTwo">
-                <button
-                  class="accordion-button collapsed fs-5 fw-bold"
-                  type="button"
-                  data-bs-toggle="collapse"
-                  data-bs-target="#collapseTwo"
-                  aria-expanded="false"
-                  aria-controls="collapseTwo"
-                >
-                  Solutions
-                </button>
-              </h2>
-              <div
-                id="collapseTwo"
-                class="accordion-collapse collapse"
-                aria-labelledby="headingTwo"
-                data-bs-parent="#footerAccordion"
+            <h2 id="accordion-small-footer-heading-2">
+              <button
+                type="button"
+                class="flex items-center justify-between w-full py-4 text-lg font-bold text-gray-500 border-b border-gray-200"
+                data-accordion-target="#accordion-small-footer-body-2"
+                aria-expanded="false"
+                aria-controls="accordion-small-footer-body-2"
               >
-                <div class="accordion-body">
-                  <ul class="fo-links">
-                    <li>
-                      <p><a href="#">Advanced Analytics</a></p>
-                    </li>
-                    <li>
-                      <p><a href="#">Customer Insights</a></p>
-                    </li>
-                    <li>
-                      <p><a href="#">Market Trends</a></p>
-                    </li>
-                    <li>
-                      <p><a href="#">Operational Efficiency</a></p>
-                    </li>
-                    <li>
-                      <p><a href="#">Performance Metrics</a></p>
-                    </li>
-                    <li>
-                      <p><a href="#">Scalable Solutions</a></p>
-                    </li>
-                  </ul>
-                </div>
+                Solutions
+                <svg
+                  data-accordion-icon
+                  class="w-3 h-3 rotate-180 shrink-0"
+                  aria-hidden="true"
+                  xmlns="http://www.w3.org/2000/svg"
+                  fill="none"
+                  viewBox="0 0 10 6"
+                >
+                  <path
+                    stroke="currentColor"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    d="M9 5 5 1 1 5"
+                  />
+                </svg>
+              </button>
+            </h2>
+            <div
+              id="accordion-small-footer-body-2"
+              class="hidden"
+              aria-labelledby="accordion-small-footer-heading-2"
+            >
+              <div class="py-4 border-b border-gray-200">
+                <ul class="fo-links space-y-2">
+                  <li>
+                    <a href="#" class="text-gray-500 hover:text-gray-900"
+                      >Advanced Analytics</a
+                    >
+                  </li>
+                  <li>
+                    <a href="#" class="text-gray-500 hover:text-gray-900"
+                      >Customer Insights</a
+                    >
+                  </li>
+                  <li>
+                    <a href="#" class="text-gray-500 hover:text-gray-900"
+                      >Market Trends</a
+                    >
+                  </li>
+                  <li>
+                    <a href="#" class="text-gray-500 hover:text-gray-900"
+                      >Operational Efficiency</a
+                    >
+                  </li>
+                  <li>
+                    <a href="#" class="text-gray-500 hover:text-gray-900"
+                      >Performance Metrics</a
+                    >
+                  </li>
+                  <li>
+                    <a href="#" class="text-gray-500 hover:text-gray-900"
+                      >Scalable Solutions</a
+                    >
+                  </li>
+                </ul>
               </div>
             </div>
             <!-- Accordion 3 -->
-            <div class="accordion-item">
-              <h2 class="accordion-header" id="headingThree">
-                <button
-                  class="accordion-button collapsed fs-5 fw-bold"
-                  type="button"
-                  data-bs-toggle="collapse"
-                  data-bs-target="#collapseThree"
-                  aria-expanded="false"
-                  aria-controls="collapseThree"
-                >
-                  Discover
-                </button>
-              </h2>
-              <div
-                id="collapseThree"
-                class="accordion-collapse collapse"
-                aria-labelledby="headingThree"
-                data-bs-parent="#footerAccordion"
+            <h2 id="accordion-small-footer-heading-3">
+              <button
+                type="button"
+                class="flex items-center justify-between w-full py-4 text-lg font-bold text-gray-500 border-b border-gray-200"
+                data-accordion-target="#accordion-small-footer-body-3"
+                aria-expanded="false"
+                aria-controls="accordion-small-footer-body-3"
               >
-                <div class="accordion-body">
-                  <ul class="fo-links">
-                    <li>
-                      <p><a href="reviews.html">Success Stories</a></p>
-                    </li>
-                    <li>
-                      <p><a href="blog-listing.html">Our Blog</a></p>
-                    </li>
-                  </ul>
-                </div>
+                Discover
+                <svg
+                  data-accordion-icon
+                  class="w-3 h-3 rotate-180 shrink-0"
+                  aria-hidden="true"
+                  xmlns="http://www.w3.org/2000/svg"
+                  fill="none"
+                  viewBox="0 0 10 6"
+                >
+                  <path
+                    stroke="currentColor"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    d="M9 5 5 1 1 5"
+                  />
+                </svg>
+              </button>
+            </h2>
+            <div
+              id="accordion-small-footer-body-3"
+              class="hidden"
+              aria-labelledby="accordion-small-footer-heading-3"
+            >
+              <div class="py-4 border-b border-gray-200">
+                <ul class="fo-links space-y-2">
+                  <li>
+                    <a
+                      href="reviews.html"
+                      class="text-gray-500 hover:text-gray-900"
+                      >Success Stories</a
+                    >
+                  </li>
+                  <li>
+                    <a
+                      href="blog-listing.html"
+                      class="text-gray-500 hover:text-gray-900"
+                      >Our Blog</a
+                    >
+                  </li>
+                </ul>
               </div>
             </div>
             <!-- Accordion 4 -->
-            <div class="accordion-item">
-              <h2 class="accordion-header" id="headingFour">
-                <button
-                  class="accordion-button collapsed fs-5 fw-bold"
-                  type="button"
-                  data-bs-toggle="collapse"
-                  data-bs-target="#collapseFour"
-                  aria-expanded="false"
-                  aria-controls="collapseFour"
-                >
-                  Legal
-                </button>
-              </h2>
-              <div
-                id="collapseFour"
-                class="accordion-collapse collapse"
-                aria-labelledby="headingFour"
-                data-bs-parent="#footerAccordion"
+            <h2 id="accordion-small-footer-heading-4">
+              <button
+                type="button"
+                class="flex items-center justify-between w-full py-4 text-lg font-bold text-gray-500 border-b border-gray-200"
+                data-accordion-target="#accordion-small-footer-body-4"
+                aria-expanded="false"
+                aria-controls="accordion-small-footer-body-4"
               >
-                <div class="accordion-body">
-                  <ul class="fo-links">
-                    <li>
-                      <p><a href="terms.html">Terms of Use</a></p>
-                    </li>
-                    <li>
-                      <p><a href="privacy.html">Privacy Policy</a></p>
-                    </li>
-                    <li>
-                      <p><a href="cookies.html">Cookie Policy</a></p>
-                    </li>
-                  </ul>
-                </div>
+                Legal
+                <svg
+                  data-accordion-icon
+                  class="w-3 h-3 rotate-180 shrink-0"
+                  aria-hidden="true"
+                  xmlns="http://www.w3.org/2000/svg"
+                  fill="none"
+                  viewBox="0 0 10 6"
+                >
+                  <path
+                    stroke="currentColor"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    d="M9 5 5 1 1 5"
+                  />
+                </svg>
+              </button>
+            </h2>
+            <div
+              id="accordion-small-footer-body-4"
+              class="hidden"
+              aria-labelledby="accordion-small-footer-heading-4"
+            >
+              <div class="py-4 border-b border-gray-200">
+                <ul class="fo-links space-y-2">
+                  <li>
+                    <a
+                      href="terms.html"
+                      class="text-gray-500 hover:text-gray-900"
+                      >Terms of Use</a
+                    >
+                  </li>
+                  <li>
+                    <a
+                      href="privacy.html"
+                      class="text-gray-500 hover:text-gray-900"
+                      >Privacy Policy</a
+                    >
+                  </li>
+                  <li>
+                    <a
+                      href="cookies.html"
+                      class="text-gray-500 hover:text-gray-900"
+                      >Cookie Policy</a
+                    >
+                  </li>
+                </ul>
               </div>
             </div>
             <!-- Accordion 5 -->
-            <div class="accordion-item">
-              <h2 class="accordion-header" id="headingFive">
-                <button
-                  class="accordion-button collapsed fs-5 fw-bold"
-                  type="button"
-                  data-bs-toggle="collapse"
-                  data-bs-target="#collapseFive"
-                  aria-expanded="false"
-                  aria-controls="collapseFive"
-                >
-                  About Us
-                </button>
-              </h2>
-              <div
-                id="collapseFive"
-                class="accordion-collapse collapse"
-                aria-labelledby="headingFive"
-                data-bs-parent="#footerAccordion"
+            <h2 id="accordion-small-footer-heading-5">
+              <button
+                type="button"
+                class="flex items-center justify-between w-full py-4 text-lg font-bold text-gray-500 border-b border-gray-200"
+                data-accordion-target="#accordion-small-footer-body-5"
+                aria-expanded="false"
+                aria-controls="accordion-small-footer-body-5"
               >
-                <div class="accordion-body">
-                  <ul class="fo-links">
-                    <li>
-                      <p><a href="about.html">About Us</a></p>
-                    </li>
-                    <li>
-                      <p><a href="team.html">Our Team</a></p>
-                    </li>
-                    <li>
-                      <p><a href="careers.html">Careers</a></p>
-                    </li>
-                  </ul>
-                </div>
+                About Us
+                <svg
+                  data-accordion-icon
+                  class="w-3 h-3 rotate-180 shrink-0"
+                  aria-hidden="true"
+                  xmlns="http://www.w3.org/2000/svg"
+                  fill="none"
+                  viewBox="0 0 10 6"
+                >
+                  <path
+                    stroke="currentColor"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    d="M9 5 5 1 1 5"
+                  />
+                </svg>
+              </button>
+            </h2>
+            <div
+              id="accordion-small-footer-body-5"
+              class="hidden"
+              aria-labelledby="accordion-small-footer-heading-5"
+            >
+              <div class="py-4">
+                <ul class="fo-links space-y-2">
+                  <li>
+                    <a
+                      href="about.html"
+                      class="text-gray-500 hover:text-gray-900"
+                      >About Us</a
+                    >
+                  </li>
+                  <li>
+                    <a
+                      href="team.html"
+                      class="text-gray-500 hover:text-gray-900"
+                      >Our Team</a
+                    >
+                  </li>
+                  <li>
+                    <a
+                      href="careers.html"
+                      class="text-gray-500 hover:text-gray-900"
+                      >Careers</a
+                    >
+                  </li>
+                </ul>
               </div>
             </div>
-            <!-- Add more sections as needed -->
           </div>
-          <!-- Form -->
-          <div class="footer-form ms-3 mt-4">
-            <h6 class="fo-title fs-5 fw-bold mb-4 ms-1">Follow the Best</h6>
-            <form class="ms-1 d-grid w-75">
-              <div class="input-group">
+          <div class="footer-form mt-4">
+            <h6 class="fo-title text-lg font-bold mb-4">Follow the Best</h6>
+            <form>
+              <div class="flex">
                 <input
                   id="email"
                   type="email"
-                  class="form-control"
+                  class="form-input px-4 py-2 rounded-l-md"
                   placeholder="Email Address"
                   required
                   autocomplete="email"
                 />
-                <button class="btn btn-primary" type="button">&#8594;</button>
+                <button
+                  class="btn btn-primary px-4 py-2 rounded-l-none rounded-r-md"
+                  type="button"
+                >
+                  &#8594;
+                </button>
               </div>
             </form>
           </div>
         </div>
         <!-- Divider -->
-        <hr class="d-none d-md-block" />
+        <hr class="my-8 border-gray-500 hidden md:block" />
         <!-- Footer Copyright -->
-        <div class="footer-copyright mt-5">
-          <div class="row row-cols-1 row-cols-md-2">
-            <div class="col">
+        <div class="footer-copyright mt-10">
+          <div class="flex flex-col items-start md:flex-row md:justify-between">
+            <div class="mb-4 md:mb-0">
               <p>&copy; 2024 FinTech. <span>All Rights Reserved</span></p>
             </div>
-            <div class="col">
-              <ul class="footer-list d-flex justify-content-md-end gap-2">
+            <div>
+              <ul
+                class="footer-list flex justify-center md:justify-end space-x-4"
+              >
                 <li>
                   <a href="#"
                     ><img
                       src="https://img.icons8.com/ios-filled/50/228BE6/facebook--v1.png"
-                      alt="facebook--v1"
-                      class="img-fluid"
+                      alt="facebook"
+                      class="w-6 h-6"
                   /></a>
                 </li>
                 <li>
                   <a href="#"
                     ><img
                       src="https://img.icons8.com/ios-filled/50/228BE6/twitterx--v1.png"
-                      alt="twitterx--v1"
-                      class="img-fluid"
+                      alt="twitter"
+                      class="w-6 h-6"
                   /></a>
                 </li>
                 <li>
@@ -2144,15 +2345,15 @@
                     ><img
                       src="https://img.icons8.com/ios-filled/50/228BE6/linkedin.png"
                       alt="linkedin"
-                      class="img-fluid"
+                      class="w-6 h-6"
                   /></a>
                 </li>
                 <li>
                   <a href="#"
                     ><img
                       src="https://img.icons8.com/ios-filled/50/228BE6/instagram-new--v1.png"
-                      alt="instagram-new--v1"
-                      class="img-fluid"
+                      alt="instagram"
+                      class="w-6 h-6"
                   /></a>
                 </li>
               </ul>
