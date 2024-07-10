@@ -1,5 +1,5 @@
 {
-  "name": "tailwind-xzect",
+  "name": "fintech-tailwind",
   "version": "1.0.0",
   "main": "",
   "scripts": {
@@ -7,13 +7,10 @@
     "watch": "tailwindcss -i ./input.css -o ./css/style.css --watch"
   },
   "keywords": [],
-  "author": "",
+  "author": "PRoy",
   "license": "ISC",
   "description": "",
   "devDependencies": {
     "tailwindcss": "^3.4.4"
-  },
-  "dependencies": {
-    "flowbite": "^2.4.1"
   }
 }
