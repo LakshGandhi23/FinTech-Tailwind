@@ -36,44 +36,44 @@
   }
 
   .btn-primary {
-    @apply bg-blue-500 text-white hover:bg-blue-600 px-4 py-2 border border-transparent;
+    @apply bg-blue-500 text-white hover:bg-blue-600 px-6 py-3 border border-transparent;
   }
 
   .btn-lg {
-    @apply py-3 px-6 text-lg;
+    @apply py-4 px-8 text-lg;
   }
 
   .btn-outline-secondary {
-    @apply border border-gray-700 text-gray-700 bg-transparent hover:bg-gray-700 hover:text-white;
+    @apply border border-gray-700 text-gray-700 px-6 py-3 bg-transparent hover:bg-gray-700 hover:text-white;
   }
 
   @screen sm {
     .btn {
-      @apply px-3 py-1.5 text-base;
+      @apply px-4 py-2 text-base;
     }
 
     .btn-lg {
-      @apply py-2.5 px-5 text-base;
+      @apply py-3 px-6 text-base;
     }
   }
 
   @screen md {
     .btn {
-      @apply px-4 py-2 text-lg;
+      @apply px-6 py-3 text-lg;
     }
 
     .btn-lg {
-      @apply py-3 px-6 text-lg;
+      @apply py-4 px-8 text-lg;
     }
   }
 
   @screen lg {
     .btn {
-      @apply px-5 py-2.5 text-xl;
+      @apply px-8 py-4 text-xl;
     }
 
     .btn-lg {
-      @apply py-3.5 px-7 text-xl;
+      @apply py-5 px-10 text-xl;
     }
   }
 
@@ -336,25 +336,26 @@
 
 @media (max-width: 576px) {
   html {
-    /* 1rem = 14px */
     font-size: 87.5%;
   }
 
   .container {
     max-width: 90%;
   }
+
+  .py-100 {
+    padding-bottom: 5.75rem;
+  }
 }
 
 @media (max-width: 428px) {
   html {
-    /* 1rem = 12px */
     font-size: 75%;
   }
 }
 
 @media (max-width: 320px) {
   html {
-    /* 1rem = 10px */
     font-size: 62.5%;
   }
 

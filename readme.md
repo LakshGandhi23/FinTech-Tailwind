@@ -2,12 +2,13 @@
 
 Website for a financial advisor startup. This website has a light, business-like design with a modern layout. Built with Tailwind and Flowbite.
 
+<img src="./images/desktop-screenshot.png"  />
+
 ## Features
 
 - Modern layout with custom animations/styles/backgrounds
 - Responsive design
 - Sticky navbar with style changes on scroll
-- Bootstrap modals
 - Testimonials with a carousel slider
 - Many other features
 
